@@ -1,6 +1,6 @@
-# README #
+# Шаблон отчетов НИР и УИР #
 
-### О шаблоне
+## О шаблоне
 
 Это универсальный LaTeX-шаблон для подготовки пояснительных записок, и их расширенных содержаний, к УИРиКП, НИР, дипломным работам бакалавров и магистерских диссертаций. Разработан на кафедра №22 "Кибернетика" НИЯУ МИФИ и соответствует ГОСТам и стандартам и традициям Кафедры.
 
@@ -17,9 +17,16 @@
 
 В собранном примере имеются многочисленные указания и полезные советы по подготовке пояснительных записок.
 
+## Скомпилированные файлы
 
-### Что нужно для использования шаблона? ###
+Последние результаты компиляции ветви `master` доступны по
+[ссылке](https://gitlab.com/skibcsit/thesis-template/-/jobs/artifacts/master/browse/?job=build).
 
-* MikTex (для Windows) или TexLive (для Linux и т.п.)
-* IDE для LaTeX (например, TexStudio, TexnicCenter)
+## Инструментарий ###
+
+* [MikTex](https://miktex.org/) (для Windows) или [TexLive](https://tug.org/texlive/) (для Linux/Windows)
+* IDE для LaTeX:
+    * [Sublime Text](https://www.sublimetext.com/) + [LaTeXTools](https://latextools.readthedocs.io/en/latest/) + [Sumatra PDF](http://www.sumatrapdfreader.org)
+    * [TexnicCenter](http://www.texniccenter.org/) + [Sumatra PDF](http://www.sumatrapdfreader.org)
+    * [TexStudio](https://www.texstudio.org/)
 * MS Word -- для заполнения шаблонов титульных листов и заданий (они в формате docx) и их конвертации в pdf.
