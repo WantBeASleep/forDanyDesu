@@ -24,9 +24,15 @@
 
 ## Инструментарий ###
 
-* [MikTex](https://miktex.org/) (для Windows) или [TexLive](https://tug.org/texlive/) (для Linux/Windows)
-* IDE для LaTeX:
+Для выполнения различных задач рекомендуется использование следующего инструментария:
+
+* Компиляция LaTeX документов:
+    * [MikTex](https://miktex.org/) (Windows)
+    * [TexLive](https://tug.org/texlive/) (для Linux/Windows)
+* Редактирование кода и сборка проекта (IDE):
     * [Sublime Text](https://www.sublimetext.com/) + [LaTeXTools](https://latextools.readthedocs.io/en/latest/) + [Sumatra PDF](http://www.sumatrapdfreader.org)
     * [TexnicCenter](http://www.texniccenter.org/) + [Sumatra PDF](http://www.sumatrapdfreader.org)
     * [TexStudio](https://www.texstudio.org/)
-* MS Word -- для заполнения шаблонов титульных листов и заданий (они в формате docx) и их конвертации в pdf.
+* Редактирования титульных листов и заданий:
+    * MS Word — для заполнения шаблонов титульных листов и заданий (они в формате docx) и их конвертации в pdf
+    * Google Docs
