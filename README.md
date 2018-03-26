@@ -35,7 +35,7 @@
     * [TexStudio](https://www.texstudio.org/)
 * Редактирования титульных листов и заданий:
     * Заполнение шаблонов титульных листов и заданий (они в формате docx) и их конвертации в pdf
-        * MS Word — для 
+        * MS Word
         * Google Docs
     * Редактирование PDF
         * вставка подписей и др. — [PDF-XChange](https://www.tracker-software.com/product/pdf-xchange-editor)
