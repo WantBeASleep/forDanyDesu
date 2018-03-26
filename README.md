@@ -34,5 +34,11 @@
     * [TexnicCenter](http://www.texniccenter.org/) + [Sumatra PDF](http://www.sumatrapdfreader.org)
     * [TexStudio](https://www.texstudio.org/)
 * Редактирования титульных листов и заданий:
-    * MS Word — для заполнения шаблонов титульных листов и заданий (они в формате docx) и их конвертации в pdf
-    * Google Docs
+    * Заполнение шаблонов титульных листов и заданий (они в формате docx) и их конвертации в pdf
+        * MS Word — для 
+        * Google Docs
+    * Редактирование PDF
+        * вставка подписей и др. — [PDF-XChange](https://www.tracker-software.com/product/pdf-xchange-editor)
+        * постраничная разбивка или склеивание — [PDFsam](https://pdfsam.org/)
+* GUI для работы с git-репозиториями
+    * [SmartGit](https://www.syntevo.com/smartgit/)
