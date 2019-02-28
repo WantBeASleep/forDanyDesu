@@ -31,7 +31,7 @@
     * [TexLive](https://tug.org/texlive/) (для Linux/Windows)
 * Редактирование кода и сборка проекта (IDE):
     * [Sublime Text](https://www.sublimetext.com/) + [LaTeXTools](https://latextools.readthedocs.io/en/latest/) + [Sumatra PDF](http://www.sumatrapdfreader.org)
-    * [TexnicCenter](http://www.texniccenter.org/) + [Sumatra PDF](http://www.sumatrapdfreader.org)
+    * [TexnicCenter](http://www.texniccenter.org/) + [Sumatra PDF](https://www.sumatrapdfreader.org)
     * [TexStudio](https://www.texstudio.org/)
 * Редактирования титульных листов и заданий:
     * Заполнение шаблонов титульных листов и заданий (они в формате docx) и их конвертации в pdf
