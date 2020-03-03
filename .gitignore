@@ -16,3 +16,4 @@
 *.local.tcp
 
 /thesis-template.pdf
+*.synctex.gz
