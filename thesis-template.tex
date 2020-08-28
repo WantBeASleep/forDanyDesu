@@ -1,27 +1,42 @@
+% arara: xelatex
+% arara: biber
+% arara: xelatex: { synctex: true }
+
 \documentclass[12pt,a4paper,oneside,final]{report}
-%\documentclass[12pt]{rusthesis}
 
 \input{chapters/thesis-template-macro.tex}
-
 
 \headertext{}
 
 \addto{\captionsrussian}{\renewcommand{\bibname}{Список литературы}}
 
+\title{Исследование и реализация сферического коня в вакууме\\
+  на основе теоретико-множественного подхода}
+
 \begin{document}
 
-%\pagenumbering{gobble}
-\pagenumbering{arabic}
+% Для титульного листа, сверстанного в LaTeX
+\input{title/title}
+\newpage
 
-\includepdf[pages={-}, offset=0mm -0mm]{title/title.pdf}
+% Для вставки бланка титульного листа из PDF-файла
+% \includepdf[pages={-}, offset=0mm -0mm]{title/title.pdf}
 
 %\clearpage
 %% Тут включается лист с подписями для ВКР
 %\includepdf[pages={-}, offset=0mm -0mm]{title/title-dep22.pdf}
 %\clearpage
 
-\includepdf[pages={-}, offset=0mm -0mm]{title/task.pdf}
+% Для листа задания, сверстанного в LaTeX
+\input{title/task}
+\newpage
 
+% Для вставки бланка задания из PDF-файла
+% \includepdf[pages={-}, offset=0mm -0mm]{title/task.pdf}
+
+\pagenumbering{arabic}
+
+\refsection
 
 %\clearpage
 %\thispagestyle{empty}
@@ -76,6 +91,8 @@
 \clearpage
 
 \input{chapters/thesis-template-bibl.tex}
+
+\endrefsection
 
 \clearpage
 

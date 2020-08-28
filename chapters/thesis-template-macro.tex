@@ -1,10 +1,9 @@
-\setlength\paperheight{297mm}
-\setlength\paperwidth{210mm}
-
+\usepackage{tabularx}
 
 \usepackage{polyglossia}
 \setmainlanguage[numerals=cyrillic]{russian}
 \setotherlanguages{english}
+\usepackage{csquotes}
 
 \usepackage{xunicode} % some extra unicode support
 %\usepackage[utf8x]{inputenc}
@@ -32,7 +31,7 @@
 
 %нумерация справа и колонтитулы справа вверху
 \usepackage{fancyhdr}
-\usepackage[left=25mm,right=10mm,top=20mm,bottom=20mm,bindingoffset=0cm]{geometry}%
+\usepackage[a4paper,left=25mm,right=10mm,top=20mm,bottom=20mm,bindingoffset=0cm]{geometry}%
 
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -45,13 +44,13 @@
 \usepackage{array}
 \usepackage{pdfpages}
 \usepackage{longtable}
-\usepackage{tabu}
+\usepackage{multirow}
 \usepackage{indentfirst}
 \usepackage[unicode=true]{hyperref}
 \usepackage{color}
 \usepackage{pgf}
-
 \usepackage{pstheorems}
+\usepackage{titling}
 
 % Настройка списков (без лишних вертикальных отступов)
 \usepackage{paralist}
@@ -120,12 +119,13 @@
 
 %% Список литературы
 
-\makeatletter
-\bibliographystyle{ugost2008}     % Оформляем список литературы по ГОСТ 7.1
-% (ГОСТ Р 7.0.11-2011, 5.6.7)
-\renewcommand{\@biblabel}[1]{#1.}   % Заменяем список литературы с квадратных
-% скобок на точку
-\makeatother
+\usepackage[
+  style=gost-numeric,
+  sorting=none,
+  language=auto,
+  autolang=other
+]{biblatex}
+\addbibresource{chapters/biblio.bib}
 
 %\frenchspacing %% изменение расстояние до и после точек в ряде случаев
 

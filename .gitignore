@@ -17,3 +17,5 @@
 
 /thesis-template.pdf
 *.synctex.gz
+*.bcf
+*.run.xml
