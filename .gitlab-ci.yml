@@ -1,9 +1,14 @@
 image: aergus/latex
 
+stages:
+  - build
+  - diff
+
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 build:
+  stage: build
   script:
     - latexmk -xelatex
   artifacts:
@@ -11,6 +16,7 @@ build:
       - "*.pdf"
 
 diff_before:
+  stage: diff
   before_script:
     - git clone https://gitlab.com/git-latexdiff/git-latexdiff.git
     - cd git-latexdiff
@@ -22,8 +28,10 @@ diff_before:
   artifacts:
     paths:
       - "git-latexdiff-out/*/*.pdf"
+  allow_failure: true
 
 diff_master:
+  stage: diff
   before_script:
     - git clone https://gitlab.com/git-latexdiff/git-latexdiff.git
     - cd git-latexdiff
@@ -36,3 +44,4 @@ diff_master:
   artifacts:
     paths:
       - "git-latexdiff-out/*/*.pdf"
+  allow_failure: true
