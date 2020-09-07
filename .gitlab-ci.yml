@@ -15,21 +15,6 @@ build:
     paths:
       - "*.pdf"
 
-diff_before:
-  stage: diff
-  before_script:
-    - git clone https://gitlab.com/git-latexdiff/git-latexdiff.git
-    - cd git-latexdiff
-    - make install-bin
-  script:
-    - cd $CI_PROJECT_DIR
-    - mkdir git-latexdiff-out
-    - git latexdiff --xelatex --no-view --tmpdirprefix $CI_PROJECT_DIR/git-latexdiff-out $CI_COMMIT_BEFORE_SHA
-  artifacts:
-    paths:
-      - "git-latexdiff-out/*/*.pdf"
-  allow_failure: true
-
 diff_master:
   stage: diff
   before_script:
