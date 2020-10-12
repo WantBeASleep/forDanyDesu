@@ -13,10 +13,8 @@
 *abbrev_list.aux
 *.tps
 *.sublime-workspace
-*.sublime-project
 *.local.tcp
-
-/thesis-template.pdf
+*.pdf
 *.synctex.gz
 *.bcf
 *.run.xml
