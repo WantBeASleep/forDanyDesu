@@ -143,6 +143,19 @@
 \theoremstyle{plain}
 \newtheorem*{annotation}{Аннотация}
 
+\makeatletter
+\newcommand*{\documenttype}[1]{\gdef\@documenttype{#1}}
+\newcommand*{\thedocumenttype}{\@documenttype}
+\newcommand*{\authorfulldative}[1]{\gdef\@authorfulldative{#1}}
+\newcommand*{\theauthorfulldative}{\@authorfulldative}
+\newcommand*{\authorgroup}[1]{\gdef\@authorgroup{#1}}
+\newcommand*{\theauthorgroup}{\@authorgroup}
+\newcommand*{\supervisor}[1]{\gdef\@supervisor{#1}}
+\newcommand*{\thesupervisor}{\@supervisor}
+\newcommand*{\consultant}[1]{\gdef\@consultant{#1}}
+\newcommand*{\theconsultant}{\@consultant}
+\makeatother
+
 \usepackage{listings}
 
 \renewcommand{\lstlistingname}{Листинг}

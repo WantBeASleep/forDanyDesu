@@ -9,6 +9,7 @@
 *.out
 *.toc
 *.synctex
+*.synctex(busy)
 *abbrev_list.aux
 *.tps
 *.sublime-workspace
