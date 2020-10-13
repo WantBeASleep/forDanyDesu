@@ -156,6 +156,12 @@
 \newcommand*{\theconsultant}{\@consultant}
 \makeatother
 
+\newcounter{projecttasknumber}
+\newcommand{\projecttask}{\setcounter{projectsubtasknumber}{0}\stepcounter{projecttasknumber}\theprojecttasknumber.}
+
+\newcounter{projectsubtasknumber}
+\newcommand{\projectsubtask}{\stepcounter{projectsubtasknumber}\theprojecttasknumber.\theprojectsubtasknumber.}
+
 \usepackage{listings}
 
 \renewcommand{\lstlistingname}{Листинг}
