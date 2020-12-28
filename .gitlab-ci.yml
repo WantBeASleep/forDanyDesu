@@ -30,3 +30,4 @@ diff_master:
     paths:
       - "git-latexdiff-out/*/*.pdf"
   allow_failure: true
+  when: manual
