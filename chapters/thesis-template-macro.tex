@@ -154,13 +154,20 @@
 \newcommand*{\thesupervisor}{\@supervisor}
 \newcommand*{\consultant}[1]{\gdef\@consultant{#1}}
 \newcommand*{\theconsultant}{\@consultant}
+\newcommand{\projecttasks}[1]{\gdef\@projecttasks{#1}}
+\newcommand{\theprojecttasks}{\@projecttasks}
+\newcommand{\projecttask}[5]{#1 & #2 & #3 & #4 & #5 \\\hline}
+\newcommand*{\taskliterature}[1]{\gdef\@taskliterature{#1}}
+\newcommand*{\thetaskliterature}{\@taskliterature}
+\newcommand*{\taskdate}[1]{\gdef\@taskdate{#1}}
+\newcommand*{\thetaskdate}{\@taskdate}
 \makeatother
 
 \newcounter{projecttasknumber}
-\newcommand{\projecttask}{\setcounter{projectsubtasknumber}{0}\stepcounter{projecttasknumber}\theprojecttasknumber.}
+\newcommand{\projecttasknum}{\setcounter{projectsubtasknumber}{0}\stepcounter{projecttasknumber}\theprojecttasknumber.}
 
 \newcounter{projectsubtasknumber}
-\newcommand{\projectsubtask}{\stepcounter{projectsubtasknumber}\theprojecttasknumber.\theprojectsubtasknumber.}
+\newcommand{\projectsubtasknum}{\stepcounter{projectsubtasknumber}\theprojecttasknumber.\theprojectsubtasknumber.}
 
 \usepackage{listings}
 

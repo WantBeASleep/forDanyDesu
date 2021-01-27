@@ -23,117 +23,16 @@
   \footnotesize
   \noindent
   \begin{longtable}{|p{.5cm}|p{230pt}|>{\scriptsize\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|>{\centering\arraybackslash}p{2cm}|} \hline
-\multicolumn{1}{|>{\centering\arraybackslash}p{0.5cm}|}{№\par п/п}
-  & \multicolumn{1}{c|}{Содержание работы}
-  & {\footnotesize Форма отчетности}
-  & Срок исполнения
-  & Отметка о выполнении\par {\scriptsize Дата, подпись} \\\hline
-\projecttask & Аналитическая часть &&& \\\hline
-% (указываются предмет и цели анализа)
-\projectsubtask & Изучение и сравнительный анализ … с целью…
-  & Аналитический отчет, список литературы
-  &
-  &
-  \\\hline
-\projectsubtask & Изучение и анализ … для…
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Анализ … применительно к задачам…
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Анализ возможностей… (для…, применительно к…, и т.п.)
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Оформление расширенного содержания пояснительной записки (РСПЗ) & Текст РСПЗ & 20.10.2020 & \\\hline%
-\projecttask & Теоретическая часть &&& \\\hline
-% (указываются используемые и разрабатываемые модели, методы, алгоритмы)
-\projectsubtask & Используется … (модель, метод, алгоритм(ы)…) Модель/ алгоритм/метод...
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Выбор/разработка…
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Разработка…
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Модификация… (алгоритма, модели, и т.п.) для …
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Адаптация … для…
-  &
-  &
-  &
-  \\\hline
-\projecttask & Инженерная часть &&& \\\hline
-% (указывается, что конкретно необходимо спроектировать, а также используемые для этого методы, технологии и инструментальные средства)
-\projectsubtask & Проектирование … (системы, подсистемы, модуля…)
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Использовать методологию проектирования….
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Разработать архитектуру для… (с учетом требований к…)
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Результаты проектирования оформить с помощью…. При проектировании использовать язык… (например, IDEF, или UML)
-  &
-  &
-  &
-  \\\hline
-\projecttask & Технологическая и практическая часть &&& \\\hline
-% (указывается, что конкретно должно быть реализовано и протестировано, а также используемые для этого методы, инструментальные средства, технологии)
-\projectsubtask & Реализовать… (систему, подсистему, модуль…)
-  & Исполняемые файлы, исходный текст
-  &
-  & \\\hline%
-\projectsubtask & Протестировать… с помощью…
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Разработать тестовые примеры для… & Исполняемые файлы, исходные тексты тестов и тестовых примеров & & \\\hline%
-\projectsubtask & Реализация должна иметь форму/обладать качествами...
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & Ожидаемым результатом является программная система/программный комплекс/программное обеспечение… со следующими отличительными характеристиками…
-  &
-  &
-  &
-  \\\hline
-\projectsubtask & При реализации использовать технологию/платформу…
-  &
-  &
-  &
-  \\\hline
-\projecttask & Оформление пояснительной записки (ПЗ) и иллюстративного материала для доклада. & Текст ПЗ, презентация & 15.12.2020 & \\\hline
-\end{longtable}
+  \multicolumn{1}{|>{\centering\arraybackslash}p{0.5cm}|}{№\par п/п}
+    & \multicolumn{1}{c|}{Содержание работы}
+    & {\footnotesize Форма отчетности}
+    & Срок исполнения
+    & Отметка о выполнении\par {\scriptsize Дата, подпись} \\\hline
+  \theprojecttasks
+  \end{longtable}
 }
 \refsection
-\nocite{Sychev}
-\nocite{Sokolov}
-\nocite{Gaidaenko}
+\thetaskliterature
 \begin{center}
   \uppercase{\textbf{\large{}Литература}}
 \end{center}
@@ -144,7 +43,7 @@
 
 {\noindent\linespread{2.0}
   \begin{tabularx}{\linewidth}{p{140pt}XXX}
-    Дата выдачи задания: & Руководитель & \hrulefill & \theauthor \\
-    01.09.2020           & Студент      & \hrulefill & \thesupervisor \\
+    Дата выдачи задания: & Руководитель & \hrulefill & \thesupervisor \\
+    \thetaskdate         & Студент      & \hrulefill & \theauthor \\
   \end{tabularx}
 }
