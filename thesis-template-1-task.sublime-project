@@ -97,7 +97,7 @@
     }
   ],
   "settings": {
-    "TEXroot": "thesis-template.tex",
+    "TEXroot": "thesis-template-1-task.tex",
     // "builder": "traditional"
     "builder": "basic"
   }

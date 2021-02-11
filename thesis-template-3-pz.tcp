@@ -3,7 +3,7 @@ Type=TeXnicCenterProjectInformation
 Version=4
 
 [ProjectInfo]
-MainFile=thesis-template.tex
+MainFile=thesis-template-3-pz.tex
 UseBibTeX=1
 UseMakeIndex=0
 ActiveProfile=XeLaTeX ⇨ PDF

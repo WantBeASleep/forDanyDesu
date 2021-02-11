@@ -2,7 +2,7 @@
 \input{title/blank-header}
 
 \begin{center}
-  {\Large{\textbf{Задание на УИР}}}\\
+  {\Large{\textbf{Задание на \theprojecttypeshort}}}\\
 
   \large
 
@@ -10,7 +10,7 @@
 \end{center}
 
 \begin{center}
-  \uppercase{\textbf{\large{}Тема УИР}}\\
+  \uppercase{\textbf{\large{}Тема \theprojecttypeshort}}\\
 
   {\Large\thetitle}\\
 
@@ -42,8 +42,8 @@
 \vfill
 
 {\noindent\linespread{2.0}
-  \begin{tabularx}{\linewidth}{p{140pt}XXX}
-    Дата выдачи задания: & Руководитель & \hrulefill & \thesupervisor \\
-    \thetaskdate         & Студент      & \hrulefill & \theauthor \\
+  \begin{tabularx}{\linewidth}{p{140pt}X>{\centering}XX}
+    Дата выдачи задания: & Руководитель & \thesupervisortaskapproval & \thesupervisor \\ \hhline{~~-~}
+    \thetaskdate         & Студент      & \theauthortaskapproval     & \theauthor     \\ \hhline{~~-~}
   \end{tabularx}
 }

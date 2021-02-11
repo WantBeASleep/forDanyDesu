@@ -127,6 +127,9 @@
 ]{biblatex}
 \addbibresource{chapters/biblio.bib}
 
+\usepackage{tikz}
+\usepackage{hhline}
+
 %\frenchspacing %% изменение расстояние до и после точек в ряде случаев
 
 \renewcommand{\theenumi}{\arabic{enumi}}
@@ -144,8 +147,10 @@
 \newtheorem*{annotation}{Аннотация}
 
 \makeatletter
-\newcommand*{\documenttype}[1]{\gdef\@documenttype{#1}}
-\newcommand*{\thedocumenttype}{\@documenttype}
+\newcommand*{\projecttypefulldative}[1]{\gdef\@projecttypefulldative{#1}}
+\newcommand*{\theprojecttypefulldative}{\@projecttypefulldative}
+\newcommand*{\projecttypeshort}[1]{\gdef\@projecttypeshort{#1}}
+\newcommand*{\theprojecttypeshort}{\@projecttypeshort}
 \newcommand*{\authorfulldative}[1]{\gdef\@authorfulldative{#1}}
 \newcommand*{\theauthorfulldative}{\@authorfulldative}
 \newcommand*{\authorgroup}[1]{\gdef\@authorgroup{#1}}
@@ -161,7 +166,37 @@
 \newcommand*{\thetaskliterature}{\@taskliterature}
 \newcommand*{\taskdate}[1]{\gdef\@taskdate{#1}}
 \newcommand*{\thetaskdate}{\@taskdate}
+\newcommand*{\supervisortaskapproval}[1]{\gdef\@supervisortaskapproval{#1}}
+\newcommand*{\thesupervisortaskapproval}{\@supervisortaskapproval}
+\newcommand*{\authortaskapproval}[1]{\gdef\@authortaskapproval{#1}}
+\newcommand*{\theauthortaskapproval}{\@authortaskapproval}
+\newcommand*{\authorrspzapproval}[1]{\gdef\@authorrspzapproval{#1}}
+\newcommand*{\theauthorrspzapproval}{\@authorrspzapproval}
+\newcommand*{\supervisorrspzapproval}[1]{\gdef\@supervisorrspzapproval{#1}}
+\newcommand*{\thesupervisorrspzapproval}{\@supervisorrspzapproval}
+\newcommand*{\consultantrspzapproval}[1]{\gdef\@consultantrspzapproval{#1}}
+\newcommand*{\theconsultantrspzapproval}{\@consultantrspzapproval}
+\newcommand*{\supervisorrspzgrade}[1]{\gdef\@supervisorrspzgrade{#1}}
+\newcommand*{\thesupervisorrspzgrade}{\@supervisorrspzgrade}
+\newcommand*{\authorpzapproval}[1]{\gdef\@authorpzapproval{#1}}
+\newcommand*{\theauthorpzapproval}{\@authorpzapproval}
+\newcommand*{\supervisorpzapproval}[1]{\gdef\@supervisorpzapproval{#1}}
+\newcommand*{\thesupervisorpzapproval}{\@supervisorpzapproval}
+\newcommand*{\consultantpzapproval}[1]{\gdef\@consultantpzapproval{#1}}
+\newcommand*{\theconsultantpzapproval}{\@consultantpzapproval}
+\newcommand*{\supervisorpzgrade}[1]{\gdef\@supervisorpzgrade{#1}}
+\newcommand*{\thesupervisorpzgrade}{\@supervisorpzgrade}
 \makeatother
+
+\newcommand{\sign}[3][0pt]{%
+  \tikz[overlay]{\node[yshift=#1]{\includegraphics[scale=#2]{img/signatures/#3.png}}}%
+}
+\newcommand{\signat}[4][0pt]{%
+  \begin{tikzpicture}[overlay]
+    \node[xshift=-10pt,yshift=#1](c){\includegraphics[scale=#2]{img/signatures/#3.png}};
+    \node[xshift=10pt,yshift=-10pt]{\scriptsize\textit{#4}};
+  \end{tikzpicture}
+}
 
 \newcounter{projecttasknumber}
 \newcommand{\projecttasknum}{\setcounter{projectsubtasknumber}{0}\stepcounter{projecttasknumber}\theprojecttasknumber.}
@@ -265,3 +300,12 @@
   {–}{-}1
   {\ }{ }1
 }
+
+\headertext{}
+
+\input{chapters/0-0-project-members}
+\input{chapters/0-1-task-data}
+
+\newcounter{totalfigures}
+\newcounter{totaltables}
+\newcounter{totallistings}

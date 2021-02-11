@@ -1,41 +1,4 @@
-% arara: xelatex
-% arara: biber
-% arara: xelatex: { synctex: true }
-
-\documentclass[12pt,a4paper,oneside,final]{report}
-
-\input{chapters/thesis-template-macro.tex}
-\input{chapters/0-0-project-members}
-\input{chapters/0-1-task-data}
-
-\headertext{}
-
-\addto{\captionsrussian}{\renewcommand{\bibname}{Список литературы}}
-
-\begin{document}
-
-\documenttype{Расширенное содержание пояснительной записки}
-% \documenttype{Пояснительная записка}
-
-% Для титульного листа, сверстанного в LaTeX
-\input{title/title}
-\newpage
-
-% Для вставки бланка титульного листа из PDF-файла
-% \includepdf[pages={-}, offset=0mm -0mm]{title/title.pdf}
-
-%\clearpage
-%% Тут включается лист с подписями для ВКР
-%\includepdf[pages={-}, offset=0mm -0mm]{title/title-dep22.pdf}
-%\clearpage
-
-% Для листа задания, сверстанного в LaTeX
-\input{title/task}
-\newpage
-
-% Для вставки бланка задания из PDF-файла
-% \includepdf[pages={-}, offset=0mm -0mm]{title/task.pdf}
-
+\pagestyle{plain}
 \pagenumbering{arabic}
 
 \refsection
@@ -90,6 +53,24 @@
 
 \input{chapters/thesis-template-conclusion.tex}
 
+\label{end_of_main_text}
+
+\setcounter{totalfigures}{\the\value{totalfigures}+\the\value{figure}}
+\setcounter{figure}{0}
+\setcounter{totaltables}{\the\value{totaltables}+\the\value{table}}
+\setcounter{table}{0}
+\setcounter{totallistings}{\the\value{totallistings}+\the\value{lstlisting}}
+\setcounter{lstlisting}{0}
+
+\makeatletter
+\edef\@currentlabel{\the\value{totalfigures}}
+\label{figures}
+\edef\@currentlabel{\the\value{totaltables}}
+\label{tables}
+\edef\@currentlabel{\the\value{totallistings}}
+\label{listings}
+\makeatother
+
 \clearpage
 
 \input{chapters/thesis-template-bibl.tex}
@@ -127,7 +108,4 @@
 
 %\end{appendices}
 
-\end{document}
-
-
-
+\label{end_of_document}
