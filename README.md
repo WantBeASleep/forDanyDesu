@@ -41,6 +41,9 @@
     * [Sublime Text](https://www.sublimetext.com/) + [LaTeXTools](https://latextools.readthedocs.io/en/latest/) + [Sumatra PDF](http://www.sumatrapdfreader.org)
     * [TexnicCenter](http://www.texniccenter.org/) + [Sumatra PDF](https://www.sumatrapdfreader.org)
     * [TexStudio](https://www.texstudio.org/)
+* Поиск и организация подборок литературы:
+    * [Google Scholar](https://scholar.google.ru/) и другие специализированные поисковики по научной литературе
+    * [Zotero](https://www.zotero.org/) и другие библиографические менеджеры
 * Редактирования титульных листов и заданий:
     * Заполнение шаблонов титульных листов и заданий (они в формате docx) и их конвертации в pdf
         * MS Word
