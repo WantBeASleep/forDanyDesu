@@ -31,7 +31,7 @@
 
 %нумерация справа и колонтитулы справа вверху
 \usepackage{fancyhdr}
-\usepackage[a4paper,left=25mm,right=10mm,top=20mm,bottom=20mm,bindingoffset=0cm]{geometry}%
+\usepackage[a4paper,left=30mm,right=15mm,top=20mm,bottom=20mm,bindingoffset=0cm]{geometry}%
 
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -74,7 +74,7 @@
 
 \usepackage[singlelinecheck=false,labelsep=endash]{caption}
 \captionsetup[table]{justification=justified}
-\captionsetup[figure]{justification=centering}
+\captionsetup[figure]{justification=justified,name=Рисунок,singlelinecheck=on,font=onehalfspacing}
 
 \usepackage{titlesec}
 \titleformat{\chapter}[block]{\centering\normalfont\Large\bfseries}{\thechapter.}{1ex}{}{}
@@ -221,7 +221,7 @@
   breakatwhitespace=true,
   framesep=6pt,
   abovecaptionskip=1em,
-  captionpos=b,
+  captionpos=t,
   extendedchars=true,
   inputencoding=utf8,
   literate={Ö}{{\"O}}1
