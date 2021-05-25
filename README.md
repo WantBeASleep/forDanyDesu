@@ -5,8 +5,13 @@
 Ссылки заданы относительно корня проекта
 и доступны только если сборка завершена:
 
-- [**просмотреть**](../-/jobs/artifacts/master/browse/?job=build)
-- [**скачать**](../-/jobs/artifacts/master/download/?job=build)
+- **просмотреть**
+    - [browse](../-/jobs/artifacts/master/browse/?job=build)
+- **скачать**
+    - [zip-архив](../-/jobs/artifacts/master/download/?job=build)
+    - [задание](../-/jobs/artifacts/master/raw/thesis-template-1-task.pdf?job=build)
+    - [РСПЗ](../-/jobs/artifacts/master/raw/thesis-template-2-rspz.pdf?job=build)
+    - [ПЗ](../-/jobs/artifacts/master/raw/thesis-template-3-pz.pdf?job=build)
 
 ## О шаблоне
 
