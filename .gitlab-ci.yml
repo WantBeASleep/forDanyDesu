@@ -1,4 +1,4 @@
-image: aergus/latex
+image: aergus/latex:2022-01-02
 
 stages:
   - build
