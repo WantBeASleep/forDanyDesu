@@ -46,6 +46,9 @@
     * [Sublime Text](https://www.sublimetext.com/) + [LaTeXTools](https://latextools.readthedocs.io/en/latest/) + [Sumatra PDF](http://www.sumatrapdfreader.org)
     * [TexnicCenter](http://www.texniccenter.org/) + [Sumatra PDF](https://www.sumatrapdfreader.org)
     * [TexStudio](https://www.texstudio.org/)
+    * [Visual Studio Code](https://code.visualstudio.com/) с плагинами
+        * LaTeX Workshop
+        * LaTeX Utilities
 * Поиск и организация подборок литературы:
     * [Google Scholar](https://scholar.google.ru/) и другие специализированные поисковики по научной литературе
     * [Zotero](https://www.zotero.org/) и другие библиографические менеджеры
@@ -58,3 +61,5 @@
         * постраничная разбивка или склеивание — [PDFsam](https://pdfsam.org/)
 * GUI для работы с git-репозиториями
     * [SmartGit](https://www.syntevo.com/smartgit/)
+    * [Tortoise Git](https://tortoisegit.org/)
+    * [Gittyup](https://murmele.github.io/Gittyup/)
