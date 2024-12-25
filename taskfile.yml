@@ -1,0 +1,9 @@
+version: "3"
+
+tasks:
+  default:
+    cmds:
+      - xelatex thesis-template-3-pz.tex
+      - biber thesis-template-3-pz
+      - xelatex thesis-template-3-pz.tex
+      - xelatex thesis-template-3-pz.tex
