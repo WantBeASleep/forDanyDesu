@@ -20,7 +20,7 @@
 
 \begin{figure}[H]%
 	\begin{center}
-		\includegraphics[width=.5\columnwidth]{./img/tipovoy_micric.png}%
+		\includegraphics[width=.6\columnwidth]{./img/tipovoy_micric.png}%
 	\end{center}
 	\caption{Модель типового микросервиса}%
 	\label{pic:tipovoy_micric}%
@@ -54,7 +54,7 @@
 В соответствии с требованиями, модель сервиса авторизации:
 \begin{figure}[H]%
 	\begin{center}
-		\includegraphics[width=.5\columnwidth]{./img/auth_model.png}%
+		\includegraphics[width=.7\columnwidth]{./img/auth_model.png}%
 	\end{center}
 	\caption{Модель сервиса аутентификации}%
 	\label{pic:auth_model}%
@@ -71,6 +71,16 @@
 На данный момент имеется 3 классификациооных признака: вероятности принадлежности узлов к классам \textbf{TI-RADS}.
 TI-RADS, описывает стадию злокачественного образования, существует 3 стадии: TI-RADS23, TI-RADS4, TI-RADS5.
 
+
+Наглядный пример:
+\begin{figure}[H]%
+	\begin{center}
+		\includegraphics[width=.8\columnwidth]{./img/nodes_segments_info.png}%
+	\end{center}
+	\caption{Предметная область узлов и сегментов}%
+	\label{pic:auth_db}%
+\end{figure}
+
 Функциональные требования к сервису узи:
 \begin{itemize}
   \item Принимать единуб композицию кадров узи, разбивать и сохранять ее по кадрам.
@@ -83,7 +93,7 @@ TI-RADS, описывает стадию злокачественного обр
 Тогда для соответствия требованиям, модель базы данных:
 \begin{figure}[H]%
 	\begin{center}
-		\includegraphics[width=.5\columnwidth]{./img/uzi_db_model.png}%
+		\includegraphics[width=.9\columnwidth]{./img/uzi_db_model.png}%
 	\end{center}
 	\caption{Модель базы данных сервиса аутентификации}%
 	\label{pic:auth_db}%
@@ -93,7 +103,7 @@ TI-RADS, описывает стадию злокачественного обр
 В соответствии с требованиями, модель сервиса узи:
 \begin{figure}[H]%
 	\begin{center}
-		\includegraphics[width=.5\columnwidth]{./img/uzi_model.png}%
+		\includegraphics[width=.6\columnwidth]{./img/uzi_model.png}%
 	\end{center}
 	\caption{Модель сервиса УЗИ}%
 	\label{pic:auth_model}%
@@ -115,11 +125,29 @@ TI-RADS, описывает стадию злокачественного обр
 В соответствии с требованиями, модель сервиса Gateway:
 \begin{figure}[H]%
 	\begin{center}
-		\includegraphics[width=.5\columnwidth]{./img/gateway_model.png}%
+		\includegraphics[width=.6\columnwidth]{./img/gateway_model.png}%
 	\end{center}
 	\caption{Модель сервиса gateway}%
 	\label{pic:auth_model}%
 \end{figure}
+
+
+\subsection{Модель системы}
+
+Общая модель всей системы:
+\begin{figure}[H]%
+	\begin{center}
+		\includegraphics[width=.9\columnwidth]{./img/system_model.png}%
+	\end{center}
+	\caption{Модель системы}%
+	\label{pic:auth_model}%
+\end{figure}
+
+
+\subsection{Выводы}
+
+Были спроектированы модели Auth Service, Uzi Service и Gateway Service. Объединением всех этих моделей является
+модель самой системы. Модели соответствуют и учитывают все функциональные требования к модулям системы и системе в целом.
 
 % В этой главе описываются разработанные/модифицированные модели/методы/
 % алгоритмы, или/и описывается применение известных стандартных методов. Также, 
