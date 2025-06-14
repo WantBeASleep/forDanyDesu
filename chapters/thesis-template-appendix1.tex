@@ -1,5 +1,11 @@
-﻿\chapter{Приложение 1}\label{app-format}
+﻿\chapter{Основные части компонента управление УЗИ снимками}\label{app-format}
 %\addcontentsline{toc}{chapter}{}
+
+\lstinputlisting[
+  label=lst:uzi_service.proto,
+  float=tb,frame=lines,
+  caption=Контракт компонента управление УЗИ снимками
+]{listings/uzi_service.proto}
 
 \lstinputlisting[
   label=lst:uziupload.proto,
@@ -19,44 +25,39 @@
   caption=Листинг топика \texttt{uziprocessed}
 ]{listings/uziprocessed.proto}
 
-
-\begin{figure}[h]%
-	\begin{center}
-		\includegraphics[width=.9\columnwidth]{./img/swagger/sw1.png}%
-	\end{center}
-	\label{pic:auth_model}%
-\end{figure}
-\begin{figure}[h]%
-	\begin{center}
-		\includegraphics[width=.9\columnwidth]{./img/swagger/sw2.png}%
-	\end{center}
-	\label{pic:auth_model}%
-\end{figure}
-\begin{figure}[h]%
-	\begin{center}
-		\includegraphics[width=.9\columnwidth]{./img/swagger/sw3.png}%
-	\end{center}
-	\label{pic:auth_model}%
-\end{figure}
-
-
+\lstinputlisting[
+  label=lst:node_controller_hadnler.go,
+  float=tb,frame=lines,
+  caption=Контроллер gRPC ручек для взаимодействия с узлами
+]{listings/node_controller_hadnler.go}
 
 \lstinputlisting[
-  label=lst:auth.sql,
+  label=lst:node_get_handler.go,
   float=tb,frame=lines,
-  caption=Листинг sql миграции Auth сервиса
-]{listings/auth.sql}'
+  caption=Контроллер gRPC ручки получения узла узи
+]{listings/node_get_handler.go}
+
+\lstinputlisting[
+  label=lst:create_nodes_1.go,
+  float=tb,frame=lines,
+  caption=Создание нового узла с сегментами ч.1
+]{listings/create_nodes_1.go}
+
+\lstinputlisting[
+  label=lst:create_nodes_2.go,
+  float=tb,frame=lines,
+  caption=Создание нового узла с сегментами ч.2
+]{listings/create_nodes_2.go}
 
 \lstinputlisting[
   label=lst:uzi.sql,
   float=tb,frame=lines,
-  caption=Листинг sql миграции uzi сервиса
+  caption=Создание бд узи компонента
 ]{listings/uzi.sql}
 
-\lstinputlisting[
-  label=lst:echo.sql,
-  float=tb,frame=lines,
-]{listings/echo.sql}
+
+
+
 % Текст пояснительной записки должен готовиться для печати на листах формата А4, использоваться должен шрифт с засечками (Roman; обычно --- Times Roman или Times New Roman), 12 или 14 кегль. Размеры полей:
 
 % \begin{itemize}
