@@ -16,7 +16,6 @@ service UziSrv {
   rpc getUzisByAuthor(GetUzisByAuthorIn) returns (GetUzisByAuthorOut);
   rpc getEchographicByUziId(GetEchographicByUziIdIn) returns (GetEchographicByUziIdOut);
   rpc updateUzi(UpdateUziIn) returns (UpdateUziOut);
-  rpc updateEchographic(UpdateEchographicIn) returns (UpdateEchographicOut);
   rpc deleteUzi(DeleteUziIn) returns (google.protobuf.Empty);
 
   // IMAGE
@@ -30,12 +29,4 @@ service UziSrv {
   rpc createSegment(CreateSegmentIn) returns (CreateSegmentOut);
   rpc getSegmentsByNodeId(GetSegmentsByNodeIdIn) returns (GetSegmentsByNodeIdOut);
   rpc updateSegment(UpdateSegmentIn) returns (UpdateSegmentOut);
-
-  // доменные области слишком сильно пересекаются, вынесено в одну надобласть
-  // NODE-SEGMENT
-  rpc createNodeWithSegments(CreateNodeWithSegmentsIn) returns (CreateNodeWithSegmentsOut);
-  rpc getNodesWithSegmentsByImageId(GetNodesWithSegmentsByImageIdIn)
-      returns (GetNodesWithSegmentsByImageIdOut);
-  rpc deleteNode(DeleteNodeIn) returns (google.protobuf.Empty);
-  rpc deleteSegment(DeleteSegmentIn) returns (google.protobuf.Empty);
 }
